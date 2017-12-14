@@ -79,11 +79,7 @@ module.exports = function(grunt) {
         options: {
           watch: true,
           alias: browserifyConfg.alias,
-          external: browserifyConfg.external,
-          transform: [
-            // [browserifyNgannotate, {global: true}]
-            // , [uglifyify, {global: true}]
-          ]
+          external: browserifyConfg.external
         }
       },
       vendor: {
