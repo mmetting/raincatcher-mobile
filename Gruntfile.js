@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       src: 'src',
       dist: 'www',
       url: '',
-      default_local_server_url: 'http://raincatcher-mobile-raincatcher.apps.148.251.77.169.xip.io'
+      default_local_server_url: 'http://raincatcher-server-raincatcher.apps.148.251.77.169.xip.io'
     },
 
     copy: {
