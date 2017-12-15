@@ -37,7 +37,7 @@ module.exports = function(grunt) {
       src: 'src',
       dist: 'www',
       url: '',
-      default_local_server_url: 'http://localhost:8001'
+      default_local_server_url: 'http://raincatcher-mobile-raincatcher.apps.148.251.77.169.xip.io'
     },
 
     copy: {
@@ -131,7 +131,7 @@ module.exports = function(grunt) {
       options: {
         port: 9002,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost',
+        hostname: '0.0.0.0',
         livereload: 35730
       },
       livereload: {
@@ -165,6 +165,7 @@ module.exports = function(grunt) {
         grunt.config.get('connect.options.port');
       var url = grunt.option('url') || grunt.config.get('app.default_local_server_url');
       grunt.config.set('app.url', conn + '/?url=' + url);
+      console.log("Connection url : ","http://raincatcher-mobile-raincatcher.apps.148.251.77.169.xip.io" + '/?url=' + url);
     } else {
       // open with no url passed to fh-js-sdk
       grunt.config.set('connect.livereload.options.open', true);
